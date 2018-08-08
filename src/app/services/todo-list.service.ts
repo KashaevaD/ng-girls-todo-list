@@ -37,7 +37,7 @@ export class TodoListService {
   }
 
   updateItem(item: TodoItem) {
-    this._todoList = this._todoList.map((_item: TodoItem) => {
+    this._todoList.map((_item: TodoItem) => {
       if (_item.title === item.title) {
         return item;
       }

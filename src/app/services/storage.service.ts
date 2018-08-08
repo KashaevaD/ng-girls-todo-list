@@ -12,7 +12,7 @@ export class StorageService {
   }
 
   getData(key: string): any {
-    return Array.from(JSON.parse(localStorage.getItem(key)));
+    return JSON.parse(localStorage.getItem(key));
   }
 
   setData(key: string, data: any) {
